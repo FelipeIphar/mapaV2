@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import axios from 'axios';
 import './leafletFix';
 
-const API_URL = 'http://localhost:3000/incidentes';
+const API_URL = "https://tu-backend.onrender.com/incidentes";
 
 function ClickHandler({ onClick }) {
   useMapEvents({
@@ -51,7 +51,7 @@ async function agregarIncidente(e) {
   return (
     <div style={{ height: '100vh', display: 'flex' }}>
       <div style={{ width: '70%' }}>
-        <MapContainer center={[-38.7183, -62.2663]} zoom={13} style={{ height: '100%' }}>
+        <MapContainer center={[-42.909543115914516, -71.31157676671803]} zoom={13} style={{ height: '100%' }}>
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution="&copy; OpenStreetMap contributors"
